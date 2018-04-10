@@ -84,5 +84,5 @@ const portNumber = 3030;
 //setup our server to start listening on the port we specified
 server.listen(portNumber, function() {
     //log to our console, so we know our server is up and running.
-    console.log('Server listening on port' ${portNumber});
+    console.log('Server listening on port' ,{portNumber});
 });
