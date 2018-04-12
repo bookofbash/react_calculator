@@ -4,7 +4,7 @@ const config = {
     entry: path.join(__dirname, '/client/index.js'), //Absolute path to our entry file
     output: { //our output congiguration
       path: path.join(__dirname, './public'), //output path (directory/folder)
-      filename: './bundle.js' // output bundled file name
+      filename: 'bundle.js' // output bundled file name
     },
     stats:{
             errorDetails: true
