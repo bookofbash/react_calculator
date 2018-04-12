@@ -13,6 +13,7 @@ const Button = (props) => {
     );
 }
 
+
 // describe our expected props types
 Button.propTypes = {
     type: React.PropTypes.string.isRequired,
