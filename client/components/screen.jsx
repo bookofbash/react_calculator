@@ -1,5 +1,6 @@
 import React from 'react'; //import react module
 import ScreenRow from './screenRow';
+import PropTypes from 'prop-types'; // import PropTypes module
 
 //Create our screen component as a functional component
 //It would dsplay two screen rows, q for questions and the other for answers
