@@ -16,9 +16,9 @@ const Button = (props) => {
 
 // describe our expected props types
 Button.propTypes = {
-    type: React.PropTypes.string.isRequired,
-    handleClick: React.PropTypes.func.isRequired,
-    label: React.PropTypes.string.isRequired,
+    type: PropTypes.string.isRequired,
+    handleClick: PropTypes.func.isRequired,
+    label: PropTypes.string.isRequired,
 }
 
 //export our button component
