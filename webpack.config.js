@@ -19,7 +19,7 @@ const config = {
             // used to handle the imports of our css files inside our jsx files.
             // The style loader then mounts our css in to the DOM
             loaders: ['style-loader', 'css-loader']
-        }
+        },
       ]
     },
     // set the file extensions we want webpack to resolve
