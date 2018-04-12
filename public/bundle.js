@@ -1153,9 +1153,9 @@ var Button = function Button(props) {
 // describe our expected props types
 //import react module
 Button.propTypes = {
-    type: _react2.default.PropTypes.string.isRequired,
-    handleClick: _react2.default.PropTypes.func.isRequired,
-    label: _react2.default.PropTypes.string.isRequired
+    type: _propTypes2.default.string.isRequired,
+    handleClick: _propTypes2.default.func.isRequired,
+    label: _propTypes2.default.string.isRequired
 
     //export our button component
 };exports.default = Button;
@@ -1202,8 +1202,8 @@ var Screen = function Screen(props) {
 
 //Define our props expected from parent components
 Screen.propTypes = {
-    question: _react2.default.PropTypes.string.isRequired,
-    answer: _react2.default.PropTypes.string.isRequired
+    question: _propTypes2.default.string.isRequired,
+    answer: _propTypes2.default.string.isRequired
 
     // export our component
 };exports.default = Screen;
@@ -1245,7 +1245,7 @@ var ScreenRow = function ScreenRow(props) {
 // we describe the props (property) that the parent element is required to pass
 // into this component
 ScreenRow.propTypes = {
-  value: _react2.default.PropTypes.string.isRequired
+  value: _propTypes2.default.string.isRequired
 };
 
 exports.default = ScreenRow;
@@ -8970,7 +8970,7 @@ exports = module.exports = __webpack_require__(21)(false);
 
 
 // module
-exports.push([module.i, "body {\n    background-color: black;\n    color: white;\n}\n.screen-row{\n    background-color: aquamarine;\n}", ""]);
+exports.push([module.i, "body {\n    background-color: black;\n}\n", ""]);
 
 // exports
 
