@@ -8970,7 +8970,7 @@ exports = module.exports = __webpack_require__(21)(false);
 
 
 // module
-exports.push([module.i, "body {\n    background-color: black;\n}\n", ""]);
+exports.push([module.i, "body {\n    background-color: black;\n}\n.screen-row:{\n    background-color: blue\n}", ""]);
 
 // exports
 
