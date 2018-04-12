@@ -1,4 +1,5 @@
 import React from 'react' //import react module
+import PropTypes from 'prop-types'; // import PropTypes module
 
 // create our Button component as a functional component
 const Button = (props) => {
