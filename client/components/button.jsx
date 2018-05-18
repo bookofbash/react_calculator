@@ -6,9 +6,14 @@ const Button = (props) => {
     return (
         <input
         type="button"
-        className={props.type === 'action' ? 'button action-button' : 'button input-button'}
+        className={
+            `${props.className} my-btn ${props.type === 'action' ? 
+            'button action-button' : 
+            'button input-button'}`
+        }
         onClick={props.handleClick}
         value={props.label}
+    
         />
     );
 }

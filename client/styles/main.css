@@ -1,6 +1,56 @@
 body {
     background-color: black;
 }
+.row {
+    margin: 5%;
+}
+.frame {
+    border-style: inset;
+    border-width: 5px;
+    border-color: silver;
+    margin: 20%;
+    display:table;
+}
 .screen-row {
-    background-color: blue
+    width:inherit;
+}
+.screen-row input {
+    width:inherit;
+    height:20px;
+    font-size: 24px;
+}
+.bottom-row{
+    text-align: right;
+}
+
+.my-btn {
+    background-color: #4CAF50; /* Green */
+    width: 18%;margin:1%;float: left;
+    border-radius: 5%;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: table-cell;
+    font-size: 16px;
+    border-collapse: collapse;
+}
+
+.my-act-btn {
+    background-color:rgb(187, 86, 86);
+    width: 18%;margin:1%;float: left;
+    color: rgb(254, 218, 218); 
+    border-collapse: collapse;
+}
+
+.clear-btn{
+    width: 18%;margin:1%;float: left;
+    background-color: rgb(154, 137, 232);
+    border-collapse: collapse;
+}
+
+.equal-btn {
+    width: 18%;margin:1%;float: left;
+    background-color: rgb(244, 213, 80);
+    border-collapse: collapse;
 }

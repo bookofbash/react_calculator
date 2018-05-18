@@ -914,7 +914,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 function _possibleConstructorReturn(self, call) { if (!self) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return call && (typeof call === "object" || typeof call === "function") ? call : self; }
 
 function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function, not " + typeof superClass); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; } // import react module
-//Impirt our screen component from this directory
+//Import our screen component from this directory
 
 
 //Import our button component from this directory
@@ -952,37 +952,41 @@ var Frame = function (_React$Component) {
                 _react2.default.createElement(
                     'div',
                     { className: 'frame' },
-                    'R_N calculator'
-                ),
-                _react2.default.createElement(_screen2.default, { question: this.state.question, answer: this.state.answer }),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'button-row' },
-                    _react2.default.createElement(_Button2.default, { label: '1', handleClick: this.handleClick, type: 'input' }),
-                    _react2.default.createElement(_Button2.default, { label: '2', handleClick: this.handleClick, type: 'input' }),
-                    _react2.default.createElement(_Button2.default, { label: '3', handleClick: this.handleClick, type: 'input' }),
-                    _react2.default.createElement(_Button2.default, { label: '4', handleClick: this.handleClick, type: 'input' }),
-                    _react2.default.createElement(_Button2.default, { label: '-', handleClick: this.handleClick, type: 'action' }),
-                    _react2.default.createElement(_Button2.default, { label: '+', handleClick: this.handleClick, type: 'action' })
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'button-row' },
-                    _react2.default.createElement(_Button2.default, { label: '5', handleClick: this.handleClick, type: 'input' }),
-                    _react2.default.createElement(_Button2.default, { label: '6', handleClick: this.handleClick, type: 'input' }),
-                    _react2.default.createElement(_Button2.default, { label: '7', handleClick: this.handleClick, type: 'input' }),
-                    _react2.default.createElement(_Button2.default, { label: '8', handleClick: this.handleClick, type: 'input' }),
-                    _react2.default.createElement(_Button2.default, { label: '*', handleClick: this.handleClick, type: 'action' }),
-                    _react2.default.createElement(_Button2.default, { label: '/', handleClick: this.handleClick, type: 'action' })
-                ),
-                _react2.default.createElement(
-                    'div',
-                    { className: 'button-row' },
-                    _react2.default.createElement(_Button2.default, { label: '9', handleClick: this.handleClick, type: 'input' }),
-                    _react2.default.createElement(_Button2.default, { label: '.', handleClick: this.handleCLick, type: 'input' }),
-                    _react2.default.createElement(_Button2.default, { label: '0', handleClick: this.handleClick, type: 'input' }),
-                    _react2.default.createElement(_Button2.default, { label: 'Cls', handleClick: this.handleClick, tyoe: 'action' }),
-                    _react2.default.createElement(_Button2.default, { label: '=', handleClick: this.handleClick, type: 'action' })
+                    'R_N calculator',
+                    _react2.default.createElement(_screen2.default, { question: this.state.question, answer: this.state.answer }),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'button-row' },
+                        _react2.default.createElement(_Button2.default, { className: 'my-btn', label: '1', handleClick: this.handleClick, type: 'input' }),
+                        _react2.default.createElement(_Button2.default, { className: 'my-btn', label: '2', handleClick: this.handleClick, type: 'input' }),
+                        _react2.default.createElement(_Button2.default, { className: 'my-btn', label: '3', handleClick: this.handleClick, type: 'input' }),
+                        _react2.default.createElement(_Button2.default, { className: 'my-act-btn', label: '-', handleClick: this.handleClick, type: 'action' }),
+                        _react2.default.createElement(_Button2.default, { className: 'my-act-btn', label: '+', handleClick: this.handleClick, type: 'action' })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'button-row' },
+                        _react2.default.createElement(_Button2.default, { className: 'my-btn', label: '4', handleClick: this.handleClick, type: 'input' }),
+                        _react2.default.createElement(_Button2.default, { className: 'my-btn', label: '5', handleClick: this.handleClick, type: 'input' }),
+                        _react2.default.createElement(_Button2.default, { className: 'my-btn', label: '6', handleClick: this.handleClick, type: 'input' }),
+                        _react2.default.createElement(_Button2.default, { className: 'my-act-btn', label: '*', handleClick: this.handleClick, type: 'action' }),
+                        _react2.default.createElement(_Button2.default, { className: 'my-act-btn', label: '/', handleClick: this.handleClick, type: 'action' })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'button-row' },
+                        _react2.default.createElement(_Button2.default, { className: 'my-btn', label: '7', handleClick: this.handleClick, type: 'input' }),
+                        _react2.default.createElement(_Button2.default, { className: 'my-btn', label: '8', handleClick: this.handleClick, type: 'input' }),
+                        _react2.default.createElement(_Button2.default, { className: 'my-btn', label: '9', handleClick: this.handleClick, type: 'input' }),
+                        _react2.default.createElement(_Button2.default, { className: 'clear-btn', label: 'C', handleClick: this.handleClick, type: 'action' }),
+                        _react2.default.createElement(_Button2.default, { className: 'equal-btn', label: '=', handleClick: this.handleClick, type: 'action' })
+                    ),
+                    _react2.default.createElement(
+                        'div',
+                        { className: 'button-row' },
+                        _react2.default.createElement(_Button2.default, { className: 'my-btn', label: '.', handleClick: this.handleClick, type: 'input' }),
+                        _react2.default.createElement(_Button2.default, { className: 'my-btn', label: '0', handleClick: this.handleClick, type: 'input' })
+                    )
                 )
             );
         }
@@ -1002,9 +1006,9 @@ var Frame = function (_React$Component) {
                         this.setState({ answer: answer });
                         break;
                     }
-                case 'Cls':
+                case 'C':
                     {
-                        //if its the Cls sign, just clean out our question and anser in the state
+                        //if its the C sign, just clean out our question and anser in the state
                         this.setState({ question: '', answer: '' });
                         break;
                     }
@@ -1144,9 +1148,10 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var Button = function Button(props) {
     return _react2.default.createElement('input', {
         type: 'button',
-        className: props.type === 'action' ? 'button action-button' : 'button input-button',
+        className: props.className + ' my-btn ' + (props.type === 'action' ? 'button action-button' : 'button input-button'),
         onClick: props.handleClick,
         value: props.label
+
     });
 };
 
@@ -8970,7 +8975,7 @@ exports = module.exports = __webpack_require__(21)(false);
 
 
 // module
-exports.push([module.i, "body {\n    background-color: black;\n}\n.screen-row:{\n    background-color: blue\n}", ""]);
+exports.push([module.i, "body {\n    background-color: black;\n}\n.row {\n    margin: 5%;\n}\n.frame {\n    border-style: inset;\n    border-width: 5px;\n    border-color: silver;\n    margin: 20%;\n    display:table;\n}\n.screen-row {\n    width:inherit;\n}\n.screen-row input {\n    width:inherit;\n    height:20px;\n    font-size: 24px;\n}\n.bottom-row{\n    text-align: right;\n}\n\n.my-btn {\n    background-color: #4CAF50; /* Green */\n    width: 18%;margin:1%;float: left;\n    border-radius: 5%;\n    color: white;\n    padding: 15px;\n    text-align: center;\n    text-decoration: none;\n    display: table-cell;\n    font-size: 16px;\n    border-collapse: collapse;\n}\n\n.my-act-btn {\n    background-color:rgb(187, 86, 86);\n    width: 18%;margin:1%;float: left;\n    color: rgb(254, 218, 218); \n    border-collapse: collapse;\n}\n\n.clear-btn{\n    width: 18%;margin:1%;float: left;\n    background-color: rgb(154, 137, 232);\n    border-collapse: collapse;\n}\n\n.equal-btn {\n    width: 18%;margin:1%;float: left;\n    background-color: rgb(244, 213, 80);\n    border-collapse: collapse;\n}\n", ""]);
 
 // exports
 
